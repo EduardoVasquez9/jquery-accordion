@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="es_HN"/>
+  <title>jQuery Accordion Plugin - Eduardo Vasquez</title>
+  <link rel="stylesheet" type="text/css" href="css/jquery.accordionjs.css" />
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.accordionjs.js"></script>
+
+  <script>
+    var acjs = undefined;
+    $(document ).ready(function() {
+        try {
+          acjs = $('#accordion').accordionjs();
+        }
+        catch(error) {
+          console.log("Error:" + error);
+          alert("Error: "+ error);
+        }
+  });
+  </script>
+</head>
+
+<body>
+  <div class="todo">
+    <div id="container">
+      <h1>jQuery Accordion Plugin - Eduardo Vasquez</h1>
+        <ul id="accordion">
+          <li data-required="true"  data-status="complete" data-selected="true" data-title="Pop">
+            <img src="img/mj.jpg"/>
+          </li>
+          <li data-required="true"  data-status="complete" data-title="Rock">
+            <img src="img/queen.jpg"/>
+          </li>
+          <li data-required="true"  data-status="incomplete" data-title="Rap">
+            <img src="img/rap.jpg"/>
+          </li>
+          <li data-required="true"  data-status="complete" data-title="Reggae">
+            <img src="img/reg.jpg"/>
+          </li>
+          <li data-required="false"  data-status="complete" data-title="Techno">
+            <img src="img/techno.jpg"/>
+          </li>
+        </ul>
+
+        <a href="https://www.jqueryscript.net/accordion/Responsive-Horizontal-jQuery-Accordion-Plugin-AccordionJS.html" target="_blank"
+        style=margin-top:"100px">Fuente</a>
+    </div>
+  </div>
+</body>
+
+</html>
